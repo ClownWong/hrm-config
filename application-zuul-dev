@@ -1,0 +1,16 @@
+server:
+  port: 9527
+logging:
+  level:
+    cn.itsource.controller: debug
+
+spring:
+  application:
+    name: GATEWAY-ZUUL
+#/plat/**的请求全交到STORE-PLAT服务中去
+zuul:
+ ignoredServices: '*' #不能使用服务名访问
+ routes:
+  plat:
+    path: /system/**
+    serviceId: SERVER-SYSTEM

@@ -1,28 +1,15 @@
 server:
   port: 9527
-logging:
-  level:
-    cn.itsource.controller: debug
-
 
 #/plat/**的请求全交到STORE-PLAT服务中去
 zuul:
  ignoredServices: '*' #不能使用服务名访问
  routes:
-  plat:
+  system:
     path: /system/**
     serviceId: SERVER-SYSTEM
-#zuul超时时间的设置
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 6000
-ribbon:
-  ConnectTimeout: 6000
-  ReadTimeout: 6000
-
+  sourse:
+    path: /sourseType/**
+    serviceId: SERVER-SOURSE
 
 

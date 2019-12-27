@@ -12,4 +12,13 @@ zuul:
     path: /courseType/**
     serviceId: SERVER-COURSE
 
-
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000
+ribbon:
+  ConnectTimeout: 6000
+  ReadTimeout: 6000

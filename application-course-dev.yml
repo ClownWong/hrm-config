@@ -1,0 +1,7 @@
+server:
+  port: 9002
+
+hrm:
+  swagger:
+    title: 课程管理服务
+    description: 课程管理服务接口文档

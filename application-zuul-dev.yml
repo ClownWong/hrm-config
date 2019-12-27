@@ -8,8 +8,8 @@ zuul:
   system:
     path: /system/**
     serviceId: SERVER-SYSTEM
-  sourse:
-    path: /sourseType/**
-    serviceId: SERVER-SOURSE
+  course:
+    path: /courseType/**
+    serviceId: SERVER-COURSE
 
 

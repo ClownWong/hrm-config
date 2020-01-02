@@ -1,0 +1,6 @@
+server:
+  port: 9006
+hrm:
+  swagger:
+    title: 静态化页面管理服务
+    description: 静态化页面管理服务接口文档
